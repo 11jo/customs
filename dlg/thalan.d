@@ -56,7 +56,7 @@ END
  * State 2 is similar to state 1, but does not need to be guarded by the RumorTalkThalan
  * global variable, so this is just a repeat of the above transitions without that guard.
  */
-EXTEND_TOP THALAN 2 #1
+EXTEND_BOTTOM THALAN 2 #1
   IF ~Global("cu#tha_imbue", "GLOBAL", 0)
       !PartyHasItem("CU#2H001")
       !PartyHasItem("CU#AX001")

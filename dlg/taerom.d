@@ -2,7 +2,7 @@
  * Add transitions to states 0, 8, 12 and 14, which are all the states in which the player
  * can ask to look at Taerom's store inventory.
  */
-EXTEND_TOP TAEROM 0 8 12 14 #2
+EXTEND_BOTTOM TAEROM 0 8 12 14 #2
   // If the player has not yet completed the Nashkel mines, Taerom isn't interested in
   // crafting a custom weapon, and says so.
   IF ~Global("cu#custom_weapon", "GLOBAL", 0)
@@ -55,7 +55,7 @@ APPEND TAEROM
 /*
  * The first time the player visits Taerom after completing the Nashkel mines, he will offer
  * his congratulations and agree to make the player a custom weapon (which the player can do
- * at this time using one of these replies, or later, as noted in the previous EXTEND_TOP).
+ * at this time using one of these replies, or later, as noted in the previous EXTEND_BOTTOM).
  */
 IF WEIGHT #1 ~Global("cu#custom_weapon", "GLOBAL", 0)
     GlobalGT("Chapter", "GLOBAL", 2)

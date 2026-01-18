@@ -4,7 +4,7 @@
  * can be upgraded. I've split it up into groups by elemental damage type so
  * that the dialog can be a little customized to the damage type, for flavor.
  */
-EXTEND_BOTTOM HALBAZ 0 #1
+EXTEND_BOTTOM HALBAZ 0
   IF ~Global("cu#hal_imbue", "GLOBAL", 0)
       OR(18)
              PartyHasItem("CU#2H002")

@@ -31,6 +31,8 @@ LANGUAGE
  */
 
 BEGIN @9001
+DESIGNATED 0
+LABEL ~customs-Charles_and_Henry~
 
 INCLUDE ~customs/lib/items.tpa~
 
@@ -48,7 +50,9 @@ END
  * Remove or relocate Ashideena: remove it from the game.
  */
 BEGIN @9003
+DESIGNATED 1
 SUBCOMPONENT @9002
+LABEL ~customs-Delete_Ashideena~
 REQUIRE_PREDICATE GAME_IS ~bgee eet~ @9008
 
 COPY_EXISTING ~BASSIL.CRE~ ~override~
@@ -67,7 +71,9 @@ BUT_ONLY
  * Remove or relocate Ashideena: relocate it to Diyab in the Iron Throne.
  */
 BEGIN @9004
+DESIGNATED 2
 SUBCOMPONENT @9002
+LABEL ~customs-Move_Ashideena~
 REQUIRE_PREDICATE GAME_IS ~bgee eet~ @9008
 
 COPY_EXISTING ~BASSIL.CRE~ ~override~
@@ -92,7 +98,9 @@ BUT_ONLY
  * Remove or relocate Varscona: remove it from the game.
  */
 BEGIN @9006
+DESIGNATED 3
 SUBCOMPONENT @9005
+LABEL ~customs-Delete_Varscona~
 REQUIRE_PREDICATE GAME_IS ~bgee eet~ @9008
 
 COPY_EXISTING ~GREYWO.CRE~ ~override~
@@ -111,7 +119,9 @@ BUT_ONLY
  * Remove or relocate Varscona: relocate it to Gardush in the Iron Throne.
  */
 BEGIN @9007
+DESIGNATED 4
 SUBCOMPONENT @9005
+LABEL ~customs-Move_Varscona~
 REQUIRE_PREDICATE GAME_IS ~bgee eet~ @9008
 
 COPY_EXISTING ~GREYWO.CRE~ ~override~
